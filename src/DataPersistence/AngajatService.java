@@ -35,7 +35,7 @@ public class AngajatService {
                 String[] values = data.split(",");
 
                 String nume = values[0];
-                int salariu =  Integer.parseInt(values[1]);
+                Integer salariu = Integer.parseInt(values[1]);
                 String adresamail = values[2];
                 String adresadomiciliu = values[3];
                 String Telefon = values[4];

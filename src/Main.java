@@ -1,4 +1,7 @@
 import Audit.AuditService;
+import DataPersistence.AngajatService;
+import DataPersistence.CladiriService;
+import DataPersistence.RegistreService;
 import Helper.CompanieHelper;
 import models.*;
 
@@ -40,8 +43,11 @@ public class Main {
             System.out.println("8. Sterge Registru");
             System.out.println("9. Sterge Angajat");
             System.out.println("10. Arata Documente");
-            System.out.println("11. Afiseaza orase");
+            System.out.println("11. Afiseaza si scrie orase");
             System.out.println("12. Stergere oras");
+            System.out.println("13. Scrie Angajati");
+            System.out.println("14. Scrie Registre");
+            System.out.println("15. Scrie Cladiri");
             System.out.println("0. Exit");
 
             int choice = scan.nextInt();
@@ -197,6 +203,18 @@ public class Main {
                     String oras = scan.next();
 
                     MyCompany.StergereOras(oras);
+                    break;
+                }
+                case 13:{
+                    AngajatService.getInstance().writeAngajati(MyCompany);
+                    break;
+                }
+                case 14:{
+                    RegistreService.getInstance().writeRegistre(MyCompany);
+                    break;
+                }
+                case 15:{
+                    CladiriService.getInstance().writeCladiri(MyCompany);
                     break;
                 }
 
