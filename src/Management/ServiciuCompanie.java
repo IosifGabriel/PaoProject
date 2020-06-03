@@ -16,4 +16,5 @@ public interface ServiciuCompanie {
     void AdaugaSucursala(Sucursale Sucursala, String oras);
     void AfiseazaDocumente();
     void AfiseazaOrase();
+    void SalveazaAngajatDB(Angajati angajat);
 }

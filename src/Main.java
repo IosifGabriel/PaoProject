@@ -1,6 +1,7 @@
 import Audit.AuditService;
 import DataPersistence.AngajatService;
 import DataPersistence.CladiriService;
+import DataPersistence.OraseService;
 import DataPersistence.RegistreService;
 import Helper.CompanieHelper;
 import models.*;
@@ -43,11 +44,13 @@ public class Main {
             System.out.println("8. Sterge Registru");
             System.out.println("9. Sterge Angajat");
             System.out.println("10. Arata Documente");
-            System.out.println("11. Afiseaza si scrie orase");
+            System.out.println("11. Afiseaza orase");
             System.out.println("12. Stergere oras");
             System.out.println("13. Scrie Angajati");
             System.out.println("14. Scrie Registre");
             System.out.println("15. Scrie Cladiri");
+            System.out.println("16. Scrie Orase");
+            System.out.println("17. Salveaza angajat in baza de date");
             System.out.println("0. Exit");
 
             int choice = scan.nextInt();
@@ -187,12 +190,13 @@ public class Main {
 
                 case 10:{
 
-                    System.out.print("Documentele din firma sunt:");
+                    System.out.println("Documentele din firma sunt:");
                     MyCompany.AfiseazaDocumente();
                     break;
                 }
 
                 case 11:{
+                    System.out.println("Orasele din firma sunt");
                     MyCompany.AfiseazaOrase();
                     break;
                 }
@@ -216,6 +220,22 @@ public class Main {
                 case 15:{
                     CladiriService.getInstance().writeCladiri(MyCompany);
                     break;
+                }
+                case 16:{
+                    OraseService.getInstance().writeOrase(MyCompany);
+                    break;
+                }
+                case 17:{
+                    scan.nextLine();
+                    System.out.println("Numele angajatului, Adresa mail, Nr telefon, Adresa Domiciliu, CNP, Salariu");
+                    String numeangajat = scan.next();
+                    String adresamail = scan.next();
+                    String nrtelefon = scan.next();
+                    String addomiciliu =scan.next();
+                    String CNP = scan.next();
+                    Integer salariu = scan.nextInt();
+
+                    MyCompany.SalveazaAngajatDB(new Angajati(numeangajat,salariu,adresamail,addomiciliu,nrtelefon,CNP));
                 }
 
             }

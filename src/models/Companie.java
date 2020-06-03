@@ -2,6 +2,7 @@ package models;
 
 
 import Audit.AuditService;
+import DBService.AngajatDBService;
 import Management.ServiciuCompanie;
 
 import java.util.ArrayList;
@@ -220,6 +221,10 @@ public class Companie implements ServiciuCompanie {
             }
 
         return null;
+    }
+
+    public void SalveazaAngajatDB(Angajati angajat){
+        AngajatDBService.getInstance().saveAngajat(angajat);
     }
 
 

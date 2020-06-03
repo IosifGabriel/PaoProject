@@ -7,6 +7,7 @@ public class Oras {
 
     private String Nume;
     private String Tara;
+    private int counter = 0;
 
     private Set<Sucursale> Sedii;
     private Set<Depozit> Depozite;
@@ -16,12 +17,14 @@ public class Oras {
         this.Tara= Tara;
         this.Sedii=Sedii;
         this.Depozite=Depozite;
+        counter = counter+1;
     }
 
     public Oras(String Nume){
         this.Nume = Nume;
         Sedii = new HashSet<>();
         Depozite = new HashSet<>();
+        counter = counter+1;
     }
 
     public Oras(String Name, String Tara){
@@ -30,6 +33,14 @@ public class Oras {
 
         Sedii = new HashSet<>();
         Depozite = new HashSet<>();
+    }
+
+    public Oras(){
+
+    }
+
+    public int getCounter(){
+        return this.counter;
     }
 
     public void setNume(String Nume){

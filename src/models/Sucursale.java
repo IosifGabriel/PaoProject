@@ -6,6 +6,7 @@ import java.util.Set;
 public class Sucursale {
 
     private String Adresa;
+    private static int counter = 0 ;
     private Set<Angajati> AngajatiSucursala;
     private Set<Registre> Registre;
 
@@ -14,14 +15,22 @@ public class Sucursale {
         this.Adresa=Adresa;
         this.AngajatiSucursala=Angajati;
         this.Registre=Registre;
+        counter = counter + 1;
     }
 
     public Sucursale(String Adresa){
         this.Adresa= Adresa;
         AngajatiSucursala = new HashSet<>();
         Registre = new HashSet<>();
+        counter = counter  + 1;
     }
 
+    public Sucursale(){
+    }
+
+    public int getCounter(){
+        return this.counter;
+    }
     public void setAdresa(String Adresa){
         this.Adresa=Adresa;
     }
