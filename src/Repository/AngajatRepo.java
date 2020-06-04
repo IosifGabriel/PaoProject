@@ -17,7 +17,7 @@ public class AngajatRepo {
 
     private static final String INSERT_STATEMENT = "INSERT INTO angajati(idAngajati,Nume,Salariu,AdresaMail,AdresaDomiciliu,Telefon,CNP) VALUES(?,?,?,?,?,?,?)";
     private static final String SELECT_STATEMENT = "SELECT * FROM angajati WHERE idAngajati=?";
-    private static final String UPDATE_STATEMENT = "UPDATE angajati SET Nume=?, Salariu=?, AdresaMail=?,AdresaDomiciliu=?,Telefon=? WHERE idAngajati = ?";
+    private static final String UPDATE_STATEMENT = "UPDATE angajati SET Nume=?, Salariu=?, AdresaMail=?,AdresaDomiciliu=?,Telefon=?, CNP=? WHERE idAngajati = ?";
     private static final String DELETE_STATEMENT = "DELETE FROM angajati WHERE idAngajati=?";
 
     private AngajatRepo(){
@@ -55,9 +55,9 @@ public class AngajatRepo {
         return angajati;
     }
 
-    public Angajati updateAngajati(Angajati angajati){
+    public Angajati updateAngajati(Angajati angajati, int idAngajat){
         try(PreparedStatement statement = DbConnectivity.getInstance().getConnection().prepareStatement(UPDATE_STATEMENT)){
-            statement.setInt(7,angajati.getCounter());
+            statement.setInt(7, idAngajat);
             statement.setString(1,angajati.getNume());
             statement.setInt(2,angajati.getSalariu());
             statement.setString(3,angajati.getAdresaMail());

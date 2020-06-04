@@ -51,6 +51,25 @@ public class Main {
             System.out.println("15. Scrie Cladiri");
             System.out.println("16. Scrie Orase");
             System.out.println("17. Salveaza angajat in baza de date");
+            System.out.println("18. Sterge angajat din baza de date");
+            System.out.println("19. Gaseste angajat in baza de date");
+            System.out.println("20. Updateaza angajat in baza de date");
+            System.out.println("21. Salveaza sucursala in baza de date");
+            System.out.println("22. Sterge sucursala din baza de date");
+            System.out.println("23. Gaseste sucursala in baza de date");
+            System.out.println("24. Updateaza sucursala in baza de date");
+            System.out.println("25. Salveaza depozit in baza de date");
+            System.out.println("26. Sterge depozit din baza de date");
+            System.out.println("27. Gaseste depozit in baza de date");
+            System.out.println("28. Updateaza depozit in baza de date");
+            System.out.println("29. Salveaza registru in baza de date");
+            System.out.println("30. Sterge registru din baza de date");
+            System.out.println("31. Gaseste registru in baza de date");
+            System.out.println("32. Updateaza registru in baza de date");
+            System.out.println("33. Salveaza oras in baza de date");
+            System.out.println("34. Sterge oras din baza de date");
+            System.out.println("35. Gaseste oras in baza de date");
+            System.out.println("36. Updateaza oras in baza de date");
             System.out.println("0. Exit");
 
             int choice = scan.nextInt();
@@ -236,7 +255,196 @@ public class Main {
                     Integer salariu = scan.nextInt();
 
                     MyCompany.SalveazaAngajatDB(new Angajati(numeangajat,salariu,adresamail,addomiciliu,nrtelefon,CNP));
+                    break;
                 }
+                case 18:{
+                    scan.nextLine();
+                    System.out.println("Id-ul angajatului care vreti sa fie sters");
+                    int id = scan.nextInt();
+
+                    MyCompany.StergeAngajatDB(id);
+                    break;
+                }
+                case 19:{
+                    scan.nextLine();
+                    System.out.println("Id-ul angajatului pe care il cauti");
+                    int id = scan.nextInt();
+
+                    Angajati cautat = MyCompany.GasesteAngajatDB(id);
+                    System.out.println(cautat.getNume());
+                    break;
+                }
+                case 20:{
+                    scan.nextLine();
+                    System.out.println("Numele angajatului, Adresa mail, Nr telefon, Adresa Domiciliu, CNP, Salariu, id-ul angajatului updatat");
+                    String numeangajat = scan.next();
+                    String adresamail = scan.next();
+                    String nrtelefon = scan.next();
+                    String addomiciliu =scan.next();
+                    String CNP = scan.next();
+                    Integer salariu = scan.nextInt();
+                    int idANgajat = scan.nextInt();
+
+                    MyCompany.UpdateAngajatDB(new Angajati(numeangajat,salariu,adresamail,addomiciliu,nrtelefon,CNP), idANgajat);
+                    break;
+
+                }
+                case 21:{
+                    scan.nextLine();
+                    System.out.println("Adresa sucursalei, orasul, tara");
+                    String adresa = scan.next();
+                    String oras = scan.next();
+                    String tara = scan.next();
+
+                    MyCompany.SalveazaSucursalaDB(new Sucursale(adresa), new Oras(oras,tara));
+
+                    break;
+                }
+                case 22:{
+                    scan.nextLine();
+                    System.out.println("Id-ul sucursalei");
+                    int id = scan.nextInt();
+
+                    MyCompany.StergeSucursalaDB(id);
+                    break;
+                }
+                case 23:{
+                    scan.nextLine();
+                    System.out.println("Id-ul sucursalei cautate");
+                    int id = scan.nextInt();
+
+                    Sucursale s = MyCompany.GasesteSucursalaDB(id);
+
+                    System.out.println(s.getAdresa()+ " " +s.GetRegistre());
+                    break;
+                }
+                case 24:{
+                    scan.nextLine();
+                    System.out.println("Updateaza sucursala, dati id, adresa");
+                    int id = scan.nextInt();
+                    String adresa = scan.next();
+
+                    MyCompany.UpdateSucursalaDB(new Sucursale(adresa), new Oras(), id);
+                    break;
+                }
+                case 25:{
+                    scan.nextLine();
+                    System.out.println("Adresa depozitului, capacitate, orasul, tara");
+                    String adresa = scan.next();
+                    int cap = scan.nextInt();
+                    String oras = scan.next();
+                    String tara = scan.next();
+
+                    MyCompany.SalveazaDepozitDB(new Depozit(cap, adresa), new Oras(oras,tara));
+
+                    break;
+                }
+                case 26:{
+                    scan.nextLine();
+                    System.out.println("Id-ul depozitului");
+                    int id = scan.nextInt();
+
+                    MyCompany.StergeDepozitDB(id);
+                    break;
+                }
+                case 27:{
+                    scan.nextLine();
+                    System.out.println("Id-ul depozitului cautat");
+                    int id = scan.nextInt();
+
+                    Depozit d = MyCompany.GasesteDepozitDB(id);
+
+                    System.out.println(d.getAdresa() +" "+ d.getRegistreStocate());
+                    break;
+                }
+                case 28:{
+                    scan.nextLine();
+                    System.out.println("Updateaza depozitula, dati id, adresa, capacitate");
+                    int id = scan.nextInt();
+                    String adresa = scan.next();
+                    int capacitate = scan.nextInt();
+
+                    MyCompany.UpdateDepozitDB(new Depozit(capacitate,adresa), new Oras(), id);
+                    break;
+                }
+                case 29:{
+                    scan.nextLine();
+                    System.out.println("Nume registru pentru adaugare, oras, cladire, adresa");
+                    String nume = scan.next();
+                    String oras = scan.next();
+                    String cladire = scan.next();
+                    String adresa = scan.next();
+
+                    MyCompany.SalveazaRegistreDB(new Registre(nume), oras, cladire, adresa);
+                }
+                case 30:{
+                    scan.nextLine();
+                    System.out.println("Id-ul registrului ce trebuie sters");
+                    int id = scan.nextInt();
+
+                    MyCompany.StergeRegistreDB(id);
+                    break;
+                }
+                case 31:{
+                    scan.nextLine();
+                    System.out.println("id-ul registrului ce trebuie gasit");
+                    int id = scan.nextInt();
+
+                    Registre registre = MyCompany.GasesteRegistruaDB(id);
+
+                    System.out.println(registre.getNumeRegistru() + " " + registre.getDocument());
+
+                    break;
+                }
+                case 32:{
+                    scan.nextLine();
+                    System.out.println("Nume registru pentru adaugare, oras, cladire, adresa, id update");
+                    String nume = scan.next();
+                    String oras = scan.next();
+                    String cladire = scan.next();
+                    String adresa = scan.next();
+                    int id = scan.nextInt();
+
+                    MyCompany.UpdateRegistreDB(new Registre(nume), oras, cladire, adresa, id);
+                }
+                case 33:{
+                    scan.nextLine();
+                    System.out.println("Nume oras, tara");
+                    String nume = scan.next();
+                    String tara = scan.next();
+
+                    MyCompany.SalveazaOrasDB(new Oras(nume,tara));
+                    break;
+                }
+                case 34:{
+                    scan.nextLine();
+                    System.out.println("Id-ul orasului ce trebuie gasit");
+                    int id = scan.nextInt();
+
+                    MyCompany.StergeOrasDB(id);
+                    break;
+                }
+                case 35:{
+                    scan.nextLine();
+                    System.out.println("Id-ul orasului ce trebuie gasit");
+                    int id = scan.nextInt();
+
+                    Oras oras = MyCompany.GasesteOrasDB(id);
+
+                    System.out.println(oras.getNume()+" " + oras.getTara());
+                    break;
+                }
+                case 36:{
+                    scan.nextLine();
+                    System.out.println("Dati numele nou, tara noua, id-ul");
+                    String nume = scan.next();
+                    String tara = scan.next();
+                    int id = scan.nextInt();
+
+                    MyCompany.UpdateOrasDB(new Oras(nume,tara), id);
+                    break;
+                }
+
 
             }
         }

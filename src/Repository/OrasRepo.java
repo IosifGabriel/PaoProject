@@ -49,9 +49,9 @@ public class OrasRepo {
     }
 
 
-    public Oras updateOras(Oras oras) {
+    public Oras updateOras(Oras oras, int idOras) {
         try (PreparedStatement statement = DbConnectivity.getInstance().getConnection().prepareStatement(UPDATE_STATEMENT)) {
-            statement.setInt(3,oras.getCounter());
+            statement.setInt(3,idOras);
             statement.setString(1, oras.getNume());
             statement.setString(2, oras.getTara());
 

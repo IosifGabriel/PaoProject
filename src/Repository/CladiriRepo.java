@@ -58,9 +58,9 @@ public class CladiriRepo {
         return depozit;
     }
 
-    public Depozit updateDepozit(Depozit depozit, Oras oras){
+    public Depozit updateDepozit(Depozit depozit, Oras oras, int idDepozit){
         try(PreparedStatement statement = DbConnectivity.getInstance().getConnection().prepareStatement(UPDATE_STATEMENT)){
-            statement.setInt(5,depozit.getCounter());
+            statement.setInt(5,idDepozit);
             statement.setString(1,oras.getNume());
             statement.setString(2,"Sucursala");
             statement.setString(3,depozit.getAdresa());
@@ -148,9 +148,9 @@ public class CladiriRepo {
         return sucursala;
     }
 
-    public Sucursale updateSucursale(Sucursale sucursala, Oras oras){
+    public Sucursale updateSucursale(Sucursale sucursala, Oras oras, int idSucursala){
         try(PreparedStatement statement = DbConnectivity.getInstance().getConnection().prepareStatement(UPDATE_STATEMENT)){
-            statement.setInt(4,sucursala.getCounter());
+            statement.setInt(4,idSucursala);
             statement.setString(1,oras.getNume());
             statement.setString(2,"Sucursala");
             statement.setString(3,sucursala.getAdresa());

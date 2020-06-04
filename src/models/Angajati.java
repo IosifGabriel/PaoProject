@@ -59,4 +59,9 @@ public  class Angajati extends Persoane  {
         return this.Nume;
     }
 
+    public String toString() {
+        return getNume() + " " +getSalariu().toString() + " " +getAdresaMail() + " " +
+                " " + getAdresaDomiciliu() + " " + getTelefon() + " " +getCNP();
+    }
+
 }

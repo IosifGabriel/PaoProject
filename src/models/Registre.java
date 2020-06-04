@@ -6,16 +6,21 @@ public class Registre {
     private String NumeRegistru;
     private ArrayList<Persoane> Operator;
     private ArrayList<Document> Document;
+    private int counter = 0;
 
+
+    public Registre(){};
 
     public Registre(String NumeRegistru){
         this.NumeRegistru = NumeRegistru;
+        counter = counter + 1;
     }
 
     public Registre(String NumeRegistru, ArrayList<Persoane> Operator, ArrayList<Document> Documente){
         this.NumeRegistru = NumeRegistru;
         this.Operator = Operator;
         this.Document = Documente;
+        counter = counter + 1;
     }
 
     public void AdaugaDocument(Document doc){
@@ -29,6 +34,10 @@ public class Registre {
                 Document.remove(d);
             }
         }
+    }
+
+    public int getCounter(){
+        return this.counter;
     }
 
     public String getNumeRegistru(){

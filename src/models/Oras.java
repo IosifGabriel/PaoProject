@@ -30,7 +30,7 @@ public class Oras {
     public Oras(String Name, String Tara){
         this.Nume=Name;
         this.Tara=Tara;
-
+        counter = counter + 1;
         Sedii = new HashSet<>();
         Depozite = new HashSet<>();
     }

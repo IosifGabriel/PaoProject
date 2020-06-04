@@ -3,12 +3,14 @@ package models;
 
 import Audit.AuditService;
 import DBService.AngajatDBService;
+import DBService.CladiriDBService;
+import DBService.OrasDBService;
+import DBService.RegistreDBService;
 import Management.ServiciuCompanie;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-import java.util.Vector;
 
 
 public class Companie implements ServiciuCompanie {
@@ -227,5 +229,61 @@ public class Companie implements ServiciuCompanie {
         AngajatDBService.getInstance().saveAngajat(angajat);
     }
 
+    public void StergeAngajatDB(int idAngajat){
+        AngajatDBService.getInstance().deleteAngajati(idAngajat);
+    }
 
+    public Angajati GasesteAngajatDB(int idAngajat){
+        return AngajatDBService.getInstance().findAngajati(idAngajat);
+    }
+
+    public Angajati UpdateAngajatDB(Angajati angajat, int idAngajat){ return AngajatDBService.getInstance().updateAngajati(angajat,idAngajat); }
+
+    public void SalveazaSucursalaDB(Sucursale sucursala, Oras oras) { CladiriDBService.getInstance().saveSucursala(sucursala,oras); }
+
+    public void StergeSucursalaDB(int idSucursala){ CladiriDBService.getInstance().deleteSucursala(idSucursala);}
+
+    public Sucursale GasesteSucursalaDB(int idSucursala) { return CladiriDBService.getInstance().findSucursala(idSucursala);}
+
+    public Sucursale UpdateSucursalaDB(Sucursale sucursala, Oras oras, int idSucursala) {return CladiriDBService.getInstance().updateSucursala(sucursala,oras, idSucursala);}
+
+    public void SalveazaDepozitDB(Depozit depozit, Oras oras){ CladiriDBService.getInstance().saveDepozit(depozit, oras);}
+
+    public void StergeDepozitDB(int idDepozit) { CladiriDBService.getInstance().deleteDepozit(idDepozit);}
+
+    public Depozit GasesteDepozitDB(int idDepozit) {return CladiriDBService.getInstance().findDepozit(idDepozit);}
+
+    public Depozit UpdateDepozitDB(Depozit depozit, Oras oras, int idDepozit){return CladiriDBService.getInstance().updateDepozit(depozit, oras, idDepozit);}
+
+    public void SalveazaOrasDB(Oras oras) {
+        OrasDBService.getInstance().saveOras(oras);
+    }
+
+    public void StergeOrasDB(int idOras){
+     OrasDBService.getInstance().deleteOras(idOras);
+    }
+
+    public Oras GasesteOrasDB(int idOras){
+      return OrasDBService.getInstance().findOras(idOras);
+    }
+
+    public Oras UpdateOrasDB(Oras oras, int idOras){
+        return OrasDBService.getInstance().updateOras(oras, idOras);
+    }
+
+    public void SalveazaRegistreDB(Registre registru, String oras, String TipCladire,  String Adresa) {
+        RegistreDBService.getInstance().saveRegistre(registru, oras, TipCladire,  Adresa);
+    }
+
+    public void StergeRegistreDB(int idRegistru){
+        RegistreDBService.getInstance().deleteRegistru(idRegistru);
+    }
+
+    public Registre GasesteRegistruaDB(int idRegistru){
+        return RegistreDBService.getInstance().findRegistru(idRegistru);
+    };
+
+    public Registre UpdateRegistreDB(Registre registru, String oras, String TipCladire, String Adresa, int idRegistru){
+        return RegistreDBService.getInstance().updateRegistru(registru, oras, TipCladire, Adresa, idRegistru);
+    }
 }

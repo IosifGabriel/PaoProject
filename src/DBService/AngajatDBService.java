@@ -21,4 +21,14 @@ public class AngajatDBService {
     public Angajati saveAngajat(Angajati angajati){
         return AngajatRepo.getInstance().saveAngajati(angajati);
     }
+
+    public boolean deleteAngajati(int idAngajat){
+        return AngajatRepo.getInstance().deleteAngajati(idAngajat);
+    }
+
+    public Angajati findAngajati(int idAngajat){
+        return AngajatRepo.getInstance().findAngajati(idAngajat);
+    }
+
+    public Angajati updateAngajati(Angajati angajat, int idAngajat){ return AngajatRepo.getInstance().updateAngajati(angajat, idAngajat);}
 }

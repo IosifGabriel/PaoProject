@@ -13,7 +13,7 @@ public class DbConnectivity {
     private static DbConnectivity instance;
 
 
-    private final String url = "jdbc:mysql://localhost:3306";
+    private final String url = "jdbc:mysql://localhost:3306/firmaarhivistica";
     private final String username ="root";
     private final String password ="iosif";
 
