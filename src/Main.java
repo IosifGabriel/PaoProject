@@ -4,8 +4,12 @@ import DataPersistence.CladiriService;
 import DataPersistence.OraseService;
 import DataPersistence.RegistreService;
 import Helper.CompanieHelper;
+import View.OrasePannel;
+import View.OraseSave;
+import View.Start;
 import models.*;
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class Main {
@@ -24,7 +28,6 @@ public class Main {
         Scanner scan = new Scanner(System.in);
 
         Companie MyCompany= new CompanieHelper().CompanieInitializareInit();
-
 
 
         AuditService.getInstance().writeAudit("Initializare companie");
@@ -442,6 +445,20 @@ public class Main {
                     int id = scan.nextInt();
 
                     MyCompany.UpdateOrasDB(new Oras(nume,tara), id);
+                    break;
+                }
+                case 37:{
+                    JFrame f = new JFrame();
+                    Start startpannel = new Start();
+                    OrasePannel op = new OrasePannel();
+                    OraseSave os = new OraseSave();
+                    startpannel.setVisible(true);
+                    op.setVisible(true);
+                    os.setVisible(true);
+                    f.add(op);
+                    f.add(startpannel);
+                    f.setSize(400,400);
+                    f.setVisible(true);
                     break;
                 }
 

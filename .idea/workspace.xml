@@ -2,32 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25180592-c426-40d3-91c7-9bf8f3dbdb26" name="Default Changelist" comment="upload some of part3">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DBService/CladiriDBService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DBService/OrasDBService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DBService/RegistreDBService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/RegistreRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/OraseDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/OraseFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/OrasePannel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/OraseSave.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/Start.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/SucursaleDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/SucursaleFind.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/View/SucursalePannel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FirmaArhivistica.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FirmaArhivistica.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirmaArhivistica/Audit/AuditService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirmaArhivistica/Audit/AuditService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirmaArhivistica/CSV/audit.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirmaArhivistica/CSV/audit.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FirmaArhivistica/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirmaArhivistica/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirmaArhivistica/Management/ServiciuCompanie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirmaArhivistica/Management/ServiciuCompanie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirmaArhivistica/models/Angajati.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirmaArhivistica/models/Angajati.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirmaArhivistica/models/Companie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirmaArhivistica/models/Companie.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FirmaArhivistica/models/Registre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FirmaArhivistica/models/Registre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Audit/AuditService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Audit/AuditService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FirmaArhivistica/View/ClientInterface.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CSV/audit.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSV/audit.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DBService/AngajatDBService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DBService/AngajatDBService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataBase/DbConnectivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataBase/DbConnectivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Management/ServiciuCompanie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Management/ServiciuCompanie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/AngajatRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/AngajatRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/CladiriRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/CladiriRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/OrasRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/OrasRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Angajati.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Angajati.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Companie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Companie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Oras.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Oras.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/Registre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Registre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/View/ClientInterface.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,19 +58,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Management/ServiciuCompanie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="37" column="81" selection-start-line="37" selection-start-column="81" selection-end-line="37" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/Oras.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+            <state relative-caret-position="357">
+              <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,32 +70,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/Companie.java">
+        <entry file="file://$PROJECT_DIR$/src/View/OrasePannel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="274" column="81" selection-start-line="274" selection-start-column="81" selection-end-line="274" selection-end-column="81" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#10029#10030#0" expanded="true" />
-                <element signature="e#10082#10083#0" expanded="true" />
-                <element signature="e#10130#10131#0" expanded="true" />
-                <element signature="e#10185#10186#0" expanded="true" />
-                <element signature="e#10233#10234#0" expanded="true" />
-                <element signature="e#10293#10294#0" expanded="true" />
-                <element signature="e#10352#10353#0" expanded="true" />
-                <element signature="e#10414#10415#0" expanded="true" />
-                <element signature="e#10683#10684#0" expanded="true" />
-                <element signature="e#10746#10747#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Repository/CladiriRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="38" column="57" lean-forward="true" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+            <state relative-caret-position="359">
+              <caret line="130" column="35" selection-end-line="136" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,24 +82,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/Sucursale.java">
+        <entry file="file://$PROJECT_DIR$/src/View/SucursalePannel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#707#708#0" expanded="true" />
-                <element signature="e#742#743#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Repository/RegistreRepo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+            <state relative-caret-position="308">
+              <caret line="122" column="9" selection-start-line="122" selection-start-column="9" selection-end-line="122" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,10 +94,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DBService/RegistreDBService.java">
+        <entry file="file://$PROJECT_DIR$/src/View/Start.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="84" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
+            <state relative-caret-position="359">
+              <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/SucursaleDelete.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -162,10 +118,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/View/SucursaleFind.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="434" column="26" selection-start-line="434" selection-start-column="26" selection-end-line="434" selection-end-column="26" />
+            <state relative-caret-position="-624">
+              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -174,10 +130,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/models/Depozit.java">
+        <entry file="file://$PROJECT_DIR$/src/View/OraseSave.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="38" />
+            <state relative-caret-position="291">
+              <caret line="92" column="63" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -186,20 +142,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DBService/CladiriDBService.java">
+        <entry file="file://$PROJECT_DIR$/src/View/OraseFind.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
+            <state relative-caret-position="187">
+              <caret line="18" column="6" selection-end-line="88" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#788#789#0" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
-                <element signature="e#938#939#0" expanded="true" />
-                <element signature="e#1015#1016#0" expanded="true" />
-                <element signature="e#1359#1360#0" expanded="true" />
-                <element signature="e#1436#1437#0" expanded="true" />
-                <element signature="e#1490#1491#0" expanded="true" />
-                <element signature="e#1565#1566#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/View/OraseDelete.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="78" column="51" selection-end-line="88" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Repository/OrasRepo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -237,7 +209,6 @@
         <option value="$PROJECT_DIR$/src/DataPersistence/OraseService.java" />
         <option value="$PROJECT_DIR$/src/Helper/CompanieHelper.java" />
         <option value="$PROJECT_DIR$/src/DataPersistence/AngajatService.java" />
-        <option value="$PROJECT_DIR$/src/View/ClientInterface.java" />
         <option value="$PROJECT_DIR$/src/models/Sucursale.java" />
         <option value="$PROJECT_DIR$/src/Repository/OraseRepo.java" />
         <option value="$PROJECT_DIR$/src/DataBase/DbConnectivity.java" />
@@ -257,11 +228,24 @@
         <option value="$PROJECT_DIR$/src/DBService/RegistreDBService.java" />
         <option value="$PROJECT_DIR$/src/Management/ServiciuCompanie.java" />
         <option value="$PROJECT_DIR$/src/models/Companie.java" />
+        <option value="$PROJECT_DIR$/src/View/ClientInterface.java" />
+        <option value="$PROJECT_DIR$/src/View/frame.java" />
+        <option value="$PROJECT_DIR$/src/View/myframe.java" />
+        <option value="$PROJECT_DIR$/src/View/MyFrame.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/View/OraseSave.java" />
+        <option value="$PROJECT_DIR$/src/View/OrasFind.java" />
+        <option value="$PROJECT_DIR$/src/View/OraseFind.java" />
+        <option value="$PROJECT_DIR$/src/View/OraseDelete.java" />
+        <option value="$PROJECT_DIR$/src/View/OrasePannel.java" />
+        <option value="$PROJECT_DIR$/src/View/SucursalePannel.java" />
+        <option value="$PROJECT_DIR$/src/View/SucursaleDelete.java" />
+        <option value="$PROJECT_DIR$/src/View/SucursaleFind.java" />
+        <option value="$PROJECT_DIR$/src/View/Start.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="347" />
     <option name="y" value="56" />
     <option name="width" value="1750" />
@@ -357,7 +341,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591308466161" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1591317984336" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/mysql-connector-java-8.0.20.jar" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -401,7 +385,7 @@
       <workItem from="1588539325574" duration="675000" />
       <workItem from="1588540032328" duration="25000" />
       <workItem from="1590130894161" duration="148000" />
-      <workItem from="1590878055329" duration="52625000" />
+      <workItem from="1590878055329" duration="61433000" />
     </task>
     <task id="LOCAL-00001" summary="upload">
       <created>1588538762665</created>
@@ -428,7 +412,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145901000" />
+    <option name="totallyTimeSpent" value="154709000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -441,7 +425,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24161074" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -487,32 +470,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="upload some of part3" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/models/Document.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-          <folding>
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#905#906#0" expanded="true" />
-            <element signature="e#1416#1417#0" expanded="true" />
-            <element signature="e#1464#1465#0" expanded="true" />
-            <element signature="e#1720#1721#0" expanded="true" />
-            <element signature="e#1754#1755#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CSVreaders/Orasreader.java" />
-    <entry file="file://$PROJECT_DIR$/src/DataPersistence/CladiriService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CSV/angajatiwrit.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -602,9 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FirmaArhivistica.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CSV/Angajati.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -651,13 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/ClientInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
@@ -715,34 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DBService/OrasDBService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#724#725#0" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#767#768#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/OrasRepo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Helper/InitializareCompanieHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -763,7 +682,7 @@
     <entry file="file://$PROJECT_DIR$/src/models/Sucursale.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#707#708#0" expanded="true" />
@@ -772,20 +691,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/Oras.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/CladiriRepo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="38" column="57" lean-forward="true" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+          <caret line="38" column="57" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -813,7 +722,7 @@
     <entry file="file://$PROJECT_DIR$/src/models/Depozit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="38" />
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -867,10 +776,145 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/frame.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/MyFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FirmaArhivistica.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/MyFram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="434" column="26" selection-start-line="434" selection-start-column="26" selection-end-line="434" selection-end-column="26" />
+        <state relative-caret-position="442">
+          <caret line="460" column="39" selection-start-line="450" selection-start-column="20" selection-end-line="460" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DBService/OrasDBService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
+            <element signature="e#757#758#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/OrasRepo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/models/Oras.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/OraseSave.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="92" column="63" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/OrasePannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="130" column="35" selection-end-line="136" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/OraseFind.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="6" selection-end-line="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/OraseDelete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="78" column="51" selection-end-line="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/SucursaleDelete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/SucursalePannel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="122" column="9" selection-start-line="122" selection-start-column="9" selection-end-line="122" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/SucursaleFind.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-624">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
