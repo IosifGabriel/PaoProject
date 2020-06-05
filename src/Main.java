@@ -73,6 +73,7 @@ public class Main {
             System.out.println("34. Sterge oras din baza de date");
             System.out.println("35. Gaseste oras in baza de date");
             System.out.println("36. Updateaza oras in baza de date");
+            System.out.println("37. Aplicatie grafica");
             System.out.println("0. Exit");
 
             int choice = scan.nextInt();
